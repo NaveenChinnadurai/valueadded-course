@@ -1,37 +1,80 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Coffee Survey</title>
+    <meta charset="utf-8">
+    <title>Coffee Survey</title>
+    <link rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
+    <section class="header">
+        <section class="banner-img">
+            <h1>All About Coffee</h1>
+        </section>
+        <ul class="navbar nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="roasting.html">ROASTING</a></li>
+            <li><a href="grinding.html">GRINDING</a></li>
+            <li><a href="brewing.html">BREWING</a></li>
+            <li><a href="drinks.html">DRINKS</a></li>
+            <li><a href="survey.html">COFFEE SURVEY</a></li>
+        </ul>
+    </section>
+    <h1>Coffee Survey</h1>
+    <form action="coffee-survey.html" method="get">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <label for="">Your Name</label>
+                <input type="text" name="name" required size="40" /><br>
+            </div>
+            <div>
+                <label for="">Email Address</label>
+                <input type="email" name="email" required placeholder="Enter a valid email address" size="40" /></br>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset-div-1">
+            <legend>Your Coffee Preferences</legend>
+            <div>
+                <label for="">Do you grind your own beans?</label>
+                <input type="radio" name="grind" value="yes" /> yes
+                <input type="radio" name="grind" value="no" /> no
+            </div>
+            <div>
+                <label for="">How do you drink your coffee?</label>
+                <input type="checkbox" name="drink" value="sugar" /> sugar
+                <input type="checkbox" name="drink" value="sugar" /> cream
+                </br>
+            </div>
+            <div>
+                <label for="">What is your favorite coffee drink?</label>
+                <select name="favorite">
+                    <option value="">please select a drink</option>
+                    <option value="drip">drip coffee</option>
+                    <option value="french">french press</option>
+                    <option value="espresso">espresso</option>
+                    <option value="latte">latte</option>
+                    <option value="flavored">flavored</option>
+                </select>
+            </div>
+            <div class="textarea">
+                <label for="">Tell us your coffee preparation methods.</label>
+                <textarea name="preparation" cols="40" rows="6"></textarea></br>
+            </div>
+            <input type="submit" value="Submit">
+        </fieldset>
 
-Coffee Survey
-
-Your Name
-
-Email Address
-
-Tell us your coffee preparation methods.
-
-Do you grind your own beans?
-yes
-no
-
-How do you drink your coffee?
-with sugar
-with cream
-
-What is your favorite coffee drink?
-
-please select a drink
-drip coffee
-french press
-espresso
-latte
-flavored
-
+    </form>
+    <ul class="navbar footer">
+        <li>HOME</li>
+        <li>ROASTING</li>
+        <li>GRINDING</li>
+        <li>BREWING</li>
+        <li>DRINKS</li>
+        <li>COFFEE SURVEY</li>
+    </ul>
 </body>
+
 </html>
